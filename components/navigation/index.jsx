@@ -8,12 +8,6 @@ import TopBar from './topbar';
 
 const Navigation = () => {
 
-  // const [isActive, setIsActive] = useState(false);
-
-  // const toggleSidebar = () => {
-  //   setIsActive(!isActive);
-  // };
-
   const [isActive, setIsActive] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
