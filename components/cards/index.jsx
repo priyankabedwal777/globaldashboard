@@ -15,7 +15,7 @@ const DashboardCards = () => {
   </div>
   <div class="card-content">
     <h1 class="card-title">Title</h1>
-    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae libero at optio. Saepe cum veritatis, eos cupiditate, consequatur ea illo, iste dolor fugiat eum officia blanditiis ratione molestias ex.</p>
     <button class="card-btn one">code</button>
   </div>
 </div>
