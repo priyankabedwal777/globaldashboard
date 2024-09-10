@@ -156,7 +156,7 @@ const Navigation = () => {
     </div>
   </div>
 </div>
-<header className=" top-bar-main">
+<header className="top-bar-main">
 <div class="logo_content">
 {!isMobile && (
     <i class='bx bx-menu-alt-right text-[25px]' onClick={toggleSidebar} id="btn">
@@ -168,7 +168,9 @@ const Navigation = () => {
   </div>
 <TopBar/>
 </header>
+<div className='home_content sidemain_gap'>
 <MainContent/>
+</div>
 
  {/* <div class="w-full h-auto lg:h-screen bg-sitebg">
 	<div class="antialiased">

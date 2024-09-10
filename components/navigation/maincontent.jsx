@@ -4,7 +4,7 @@ import DashboardCards from '../cards'
 const MainContent = () => {
   return (
    <>
- <div class="home_content ">
+ <div className='home-inner'>
   <DashboardCards/>
  </div> 
    </>

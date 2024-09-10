@@ -350,10 +350,14 @@ p {
   display: flex;
   justify-content: space-between;
   /* background-color: #00000016; */
-  background-color: #F4F7FE;
+  background-color: rgb(246, 244, 244);
   /* position: absolute; */
-  position: relative;
-  /* left: 60px; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* width: 100%; */
+  z-index: 99;
+  left: 60px;
   width: calc(100%-60px);
   padding: 20px 20px 20px 10px;
 }
@@ -487,12 +491,10 @@ p {
 
 /* inner main sections */
 
-.home_content {
+/* .home_content {
   display: flex;
   justify-content: space-between;
-  /* background-color: #00000016; */
   position: absolute;
-  /* position: relative; */
   left: 60px;
   top: 80px;
   width: calc(100%-60px);
@@ -502,6 +504,26 @@ p {
 .sidebar.active ~ .home_content{
   left: 240px;
   width: calc(100% - 240px);
+} */
+
+.home_content {
+  display: flex;
+  background-color: rgb(239, 105, 105);
+  position: relative;
+  top: 100px;
+  left: 60px;
+  width: calc(100%-60px);
+}
+
+
+.home_content  .home-inner{
+  display: flex;
+  align-items: center;
+}
+
+.sidebar.active ~ .home_content{
+  left: 190px;
+  width: calc(80% - 190px);
 }
 
 /* dashboard cards */
@@ -521,6 +543,7 @@ p {
 
 .card-wrap {
   /* width: 220px; */
+  /* width: 100%; */
   background: #fff;
   border-radius: 20px;
   border: 5px solid #fff;
@@ -630,4 +653,66 @@ p {
     var(--card4-gradient-color1),
     var(--card4-gradient-color2)
   );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+
+.sidemain_gap {
+  margin-left:20px ;
+  margin-right: 20px;
+}
+
+@media (min-width: 640px) {
+  .sidemain_gap {
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidemain_gap {
+      margin-left: 80px;
+      margin-right: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidemain_gap {
+      margin-left: 80px;
+      margin-right:80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .sidemain_gap  {
+      margin-left: 80px;
+      margin-right: 80px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .sidemain_gap {
+      margin-left: 96px;
+      margin-right: 96px ;
+  }
 }
